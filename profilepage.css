@@ -4,7 +4,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    margin: 20px;
     
     padding: 10px;
     box-sizing: border-box;
@@ -12,14 +12,14 @@ body {
 }
 
 .big-rectangle {
-    width: 75%;
-    height: 50%;
+    width: 65%;
+    height: 45%;
     border: 1px solid black;
-    background-image: linear-gradient(rgb(218, 229, 234), rgb(76, 168, 194));
+    /* background-image: linear-gradient(rgb(218, 229, 234), rgb(76, 168, 194)); */
     display: flex;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .centered-content {  
@@ -32,14 +32,26 @@ body {
 }
 
 .centered-content img {
-    max-width: 30%;
-    height: auto;
-    border-radius: 50%;
+    /* max-width: 20%;  */
+    /* height:10vh ; */
+    /* width: 10vh;*/
+    max-height:29vh ;
+    max-width: 29vh;
+    border-radius: 50%; 
+    position: relative;
+    left: 65vh;
+    top:16vh
 }
 
 .centered-content p {
     margin: 10px 0 0 0;
     font-size: 1.5vw;
+    color: black;
+    z-index: 1;
+    position: absolute;
+    left: 73vh;
+    top: 46vh;
+   
 }
 
 .small-rectangles {
@@ -47,7 +59,8 @@ body {
     width: 75%;
     height: 25%;
     margin-top: 20px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    padding: 30px;
 }
 
 .small-rectangle {
@@ -57,19 +70,19 @@ body {
     align-items: flex-start;
     justify-content:center;
     text-align: left;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 30px;
+    /* box-sizing: border-box;  */
 }
 
 .left-rectangle {
     margin-right: 10px;
     flex-direction: column;
-    background-image: linear-gradient(rgb(25, 157, 197), rgb(43, 40, 40));
+    background-image: linear-gradient(rgb(25, 120, 197), rgb(47, 43, 43));
 }
 
 .right-rectangle {
     flex-direction: column;
-    background-image: linear-gradient(rgb(25, 157, 197), rgb(43, 40, 40));
+    background-image: linear-gradient(rgb(25, 120, 197), rgb(47, 43, 43));
 }
 
 .text {
@@ -78,6 +91,17 @@ body {
     color: aliceblue;
     /* border: 1.5px solid black; */
     
+}
+
+.big-rectangle img{
+ /* width: 110%; */
+  width: 160vh ; 
+height: 44vh;  
+align-items: center;
+/* object-fit: contain; */
+position: absolute;
+/* top:0;
+left:0; */
 }
 
 @media (max-width: 768px) {
@@ -99,6 +123,23 @@ body {
     .left-rectangle {
         margin-right: 0;
         margin-bottom: 10px;
+        width: 170%;
+
+    }
+    .right-rectangle{
+        width: 170%;
+    }
+    .centered-content img{
+        top:14vh;
+        left:3vh;
+        height: 22vh;
+        width: 22vh;
+    }
+
+    .centered-content p{
+        top: 38vh;
+        left: 6vh;
+       
     }
 }
 
@@ -113,7 +154,9 @@ body {
     }
 
     .small-rectangles {
-        width: 100%;
+        margin-left: 100px;
+        margin-top: 50px;
+        width: 140%;
         height: auto;
     }
 }
